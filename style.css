@@ -1,0 +1,114 @@
+:root {
+  --bg:     #0d0d0d;
+  --border: #2a2a2a;
+  --accent: #c8f135;
+  --text:   #e8e8e8;
+  --input-bg: #111;
+  --strong-color: #ffffff;
+  --em-color: #cccccc;
+  --muted:  #777;
+  --mono:   'Courier New', monospace;
+  --sans:   Georgia, 'Times New Roman', sans-serif;
+}
+* { box-sizing:border-box; margin:0; padding:0; }
+body {
+  background:var(--bg); color:var(--text);
+  font-family:var(--mono); font-size:15px;
+  line-height:1.8; padding:3rem 1.5rem;
+}
+a { color:var(--accent); text-decoration:none; }
+a:hover { text-decoration:underline; }
+.site-header {
+  border-bottom:1px solid var(--border);
+  padding-bottom:1.5rem; margin-bottom:2.5rem;
+}
+.site-title { font-size:1.6rem; letter-spacing:.05em; }
+.site-title span { color:var(--accent); }
+.container { max-width:700px; margin:0 auto; }
+.post-list { list-style:none; }
+.post-list li {
+  display:block;
+  padding:.65rem 0; border-bottom:1px solid var(--border);
+}
+
+.item-header { display:flex; justify-content:space-between; align-items:baseline; gap:1rem; }
+.item-title { font-weight:600; font-size:1.05rem; color:var(--text); text-decoration:none; }
+.item-meta { display:flex; flex-direction:column; align-items:flex-end; gap:.25rem; }
+.item-body { display:flex; gap:1rem; align-items:center; justify-content:space-between; margin-top:.35rem; }
+.item-body .excerpt { flex:1; margin:0; }
+.readmore { margin-left:auto; white-space:nowrap; align-self:flex-end; }
+.item-meta-header { display:flex; align-items:center; gap:.5rem; flex-shrink:0; color:var(--muted); }
+.search { margin-bottom:1rem; display:flex; gap:.5rem; align-items:center; }
+.search input { flex:1; padding:.45rem .6rem; border-radius:4px; border:1px solid var(--border); background:var(--input-bg); color:var(--text); }
+.search button { padding:.35rem .6rem; border-radius:4px; border:1px solid var(--border); background:transparent; color:var(--muted); cursor:pointer; }
+.search button:hover { color:var(--accent); }
+
+/* Light theme overrides. The page root will get `data-theme="light"`
+ * when the user selects light mode; variables below reverse colors. */
+[data-theme="light"] {
+  --bg:     #efece7;
+  --border: #d9d6d1;
+  --accent: #2b5d99;
+  --text:   #222222;
+  --input-bg: #f6f5f2;
+  --muted:  #5e5b57;
+  --strong-color: #111111;
+  --em-color: #444444;
+  --mono:   'Courier New', monospace;
+  --sans:   Georgia, 'Times New Roman', serif;
+}
+
+/* Theme toggle button in the header */
+#theme-toggle {
+  margin-left: .75rem; background: transparent; border:1px solid var(--border);
+  color:var(--muted); padding:.25rem .5rem; border-radius:4px; cursor:pointer;
+}
+#theme-toggle:hover { color:var(--accent); }
+.post-list .date { color:var(--muted); font-size:.85rem; white-space:nowrap; }
+.post-header { margin-bottom:2rem; }
+.post-title {
+  font-size:2rem; line-height:1.2; margin-bottom:.5rem;
+  font-family:var(--sans); font-style:italic;
+}
+.post-date { color:var(--muted); font-size:.85rem; }
+.post-body { font-family:var(--sans); font-size:1rem; }
+.post-body p  { margin-bottom:1.3rem; }
+.post-body h1,.post-body h2,.post-body h3 {
+  font-family:var(--mono); color:var(--accent);
+  margin:2rem 0 .75rem; letter-spacing:.03em;
+}
+.post-body h1 { font-size:1.4rem; }
+.post-body h2 { font-size:1.2rem; }
+.post-body h3 { font-size:1rem; }
+.post-body ul { margin:0 0 1.3rem 1.5rem; }
+.post-body li { margin-bottom:.4rem; }
+.post-body code {
+  font-family:var(--mono); font-size:.88em;
+  background:#1e1e1e; color:#c8f135;
+  padding:.1em .35em; border-radius:3px;
+}
+.post-body pre {
+  background:#111; border:1px solid var(--border);
+  padding:1.2rem; border-radius:4px;
+  overflow-x:auto; margin-bottom:1.3rem;
+}
+.post-body pre code {
+  background:none; padding:0;
+  color:#e8e8e8; font-size:.88rem; line-height:1.6;
+}
+.post-body strong { color:var(--strong-color); }
+.post-body em     { color:var(--em-color); }
+.back {
+  display:inline-block; margin-top:2.5rem;
+  font-size:.85rem; color:var(--muted);
+}
+.back:hover { color:var(--accent); }
+footer {
+  margin-top:3rem; padding-top:1.5rem;
+  border-top:1px solid var(--border);
+  color:var(--muted); font-size:.8rem;
+}
+
+.excerpt { color:var(--muted); font-size:.95rem; margin:.35rem 0 .75rem; }
+.readmore { font-size:.9rem; color:var(--accent); text-decoration:none; }
+.readmore:hover { text-decoration:underline; }
