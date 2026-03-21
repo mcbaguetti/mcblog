@@ -1,4 +1,4 @@
-# cblog
+# mcblog
 
 A minimal static blog generator written in C. No dependencies, no build system, no runtime — just a single C file that reads Markdown posts and outputs HTML.
 
