@@ -57,7 +57,6 @@ package-lock.json
 node_modules/
 example/
 cblog
-output/howmuch.html
-output/index.html
-output/oooo.html
-output/rss.xml
+output/
+testposts/
+posts/oooo.md
