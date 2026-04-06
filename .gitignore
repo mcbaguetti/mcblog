@@ -50,3 +50,10 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+
+# JS IGNORE
+package.json
+package-lock.json
+node_modules/
+example/
