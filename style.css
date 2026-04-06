@@ -1,7 +1,7 @@
 :root {
   --bg:     #0d0d0d;
   --border: #2a2a2a;
-  --accent: #c8f135;
+  --accent: #847eb3;
   --text:   #e8e8e8;
   --input-bg: #111;
   --strong-color: #ffffff;
@@ -84,7 +84,7 @@ a:hover { text-decoration:underline; }
 .post-body li { margin-bottom:.4rem; }
 .post-body code {
   font-family:var(--mono); font-size:.88em;
-  background:#1e1e1e; color:#c8f135;
+  background:#1e1e1e; color:#847eb3;
   padding:.1em .35em; border-radius:3px;
 }
 .post-body pre {
