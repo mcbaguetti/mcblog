@@ -145,3 +145,7 @@ The `output/` folder is a self-contained static site. You can host it anywhere t
 - Posts are listed in the order the filesystem returns them (no automatic date sorting).
 - `dirent.h` is used for directory scanning — this will **not** compile natively on Windows. Use WSL or MinGW if on Windows.
 - There is no configuration file. Edit `blog.c` directly to change the site title, colors, or CSS.
+
+
+## Neko Script and image
+Thanks to adryd for the [neko script](https://github.com/adryd325/oneko.js) and raynecloudy for the [black neko](https://github.com/raynecloudy/lots-o-nekos)
