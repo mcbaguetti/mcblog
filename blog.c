@@ -7,7 +7,7 @@
 #include <string.h>
 #include <dirent.h>
 
-#define MAX_POSTS  64
+#define MAX_POSTS  1000
 #define MAX_LINE   2048
 #define MAX_PATH   512
 #define MAX_TITLE  256
@@ -188,6 +188,7 @@ static void write_page_close(FILE *f) {
     fprintf(f,
         "  <footer><a href=\"https://x.com/mcbaguetti\">X</a>&mdash;<a href=\"rss.xml\">RSS</a></footer>\n"
         "</div>\n"
+           "<script src=\"/example/oneko.js-main/oneko.js\" data-cat=\"/assets/black.gif\"></script>\n"
         "<script>\n"
         "(function(){\n"
         "  var btn = document.getElementById('theme-toggle');\n"
@@ -348,6 +349,8 @@ static void generate_post(Post *p, const char *outdir) {
     fprintf(f,
         "    </div>\n  </article>\n"
         "  <a class=\"back\" href=\"index.html\">&larr; back to index</a>\n");
+
+    /* no embedded canvas or main.js by default */
 
     write_page_close(f);
     fclose(src); fclose(f);
