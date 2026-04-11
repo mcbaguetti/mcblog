@@ -155,7 +155,7 @@ static void render_inline_text(const char *src, char *out, size_t n) {
  * single file avoids embedding large inline style blocks in every
  * generated HTML file. */
 static void write_css(FILE *f) {
-    fprintf(f, "  <link rel=\"stylesheet\" href=\"../style.css\">\n");
+    fprintf(f, "  <link rel=\"stylesheet\" href=\"/assets/style.css\">\n");
 }
 
 /* ── Page shell ────────────────────────────────────── */
@@ -188,7 +188,7 @@ static void write_page_close(FILE *f) {
     fprintf(f,
         "  <footer><a href=\"https://x.com/mcbaguetti\">X</a>&mdash;<a href=\"rss.xml\">RSS</a></footer>\n"
         "</div>\n"
-           "<script src=\"/example/oneko.js-main/oneko.js\" data-cat=\"/assets/black.gif\"></script>\n"
+           "<script src=\"/assets/oneko.js\" data-cat=\"/assets/black.gif\"></script>\n"
         "<script>\n"
         "(function(){\n"
         "  var btn = document.getElementById('theme-toggle');\n"
