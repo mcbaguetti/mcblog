@@ -75,7 +75,7 @@ This will generate `output/index.html` and one HTML file per post. Open `output/
 
 ## Post Format
 
-```markdown
+````markdown
 ---
 title: The Title of Your Post
 date:  YYYY-MM-DD
@@ -96,7 +96,8 @@ A [link to somewhere](https://example.com).
 # A fenced code block
 gcc -o cblog blog.c
 ```
-```
+
+````
 
 > **Rules:**
 > - The `---` delimiters are required.
