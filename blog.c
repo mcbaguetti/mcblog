@@ -176,7 +176,7 @@ static void write_page_open(FILE *f, const char *title, const char *home) {
         "</head>\n<body>\n<div class=\"container\">\n"
         "  <header class=\"site-header\">\n"
         "    <div style=\"display:flex;align-items:center;gap:.5rem;justify-content:space-between\">\n"
-        "      <div class=\"site-title\"><a href=\"%s\"><span><</span>mcbaguetti</a><span>></span></div>\n"
+        "      <div class=\"site-title\"><a href=\"%s\"><span>></span>mcbaguetti</a><span><</span></div>\n"
         "      <div>\n"
         "        <button id=\"theme-toggle\" aria-label=\"Toggle theme\">Light</button>\n"
         "      </div>\n"
@@ -186,7 +186,7 @@ static void write_page_open(FILE *f, const char *title, const char *home) {
 
 static void write_page_close(FILE *f) {
     fprintf(f,
-        "  <footer><a href=\"https://x.com/mcbaguetti\">X</a>&mdash;<a href=\"rss.xml\">RSS</a></footer>\n"
+        "  <footer><a href=\"https://x.com/mcbaguetti\">X</a>&mdash;<a href=\"rss.xml\">RSS</a>&mdash;<a href=\"https://github.com/mcbaguetti\">GH</a></footer>\n"
         "</div>\n"
            "<script src=\"/assets/oneko.js\" data-cat=\"/assets/black.gif\"></script>\n"
         "<script>\n"
