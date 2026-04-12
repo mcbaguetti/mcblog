@@ -178,7 +178,7 @@ static void write_page_open(FILE *f, const char *title, const char *home) {
         "    <div style=\"display:flex;align-items:center;gap:.5rem;justify-content:space-between\">\n"
         "      <div class=\"site-title\"><a href=\"%s\"><span>></span>mcbaguetti</a><span><</span></div>\n"
         "      <div>\n"
-        "        <button id=\"theme-toggle\" aria-label=\"Toggle theme\">Light</button>\n"
+        "        <button id=\"theme-toggle\" aria-label=\"Toggle theme\">Dark</button>\n"
         "      </div>\n"
         "    </div>\n"
         "  </header>\n", home);
@@ -198,7 +198,7 @@ static void write_page_close(FILE *f) {
         "    if(btn) btn.textContent = (t==='light') ? 'Dark' : 'Light';\n"
         "  }\n"
         "  try{ var stored = localStorage.getItem('theme'); }catch(e){var stored=null;}\n"
-        "  applyTheme(stored==='light' ? 'light' : 'dark');\n"
+        "  applyTheme(stored==='dark' ? 'dark' : 'light');\n"
         "  if(!btn) return;\n"
         "  btn.addEventListener('click', function(){\n"
         "    var cur = document.documentElement.getAttribute('data-theme')==='light' ? 'light' : 'dark';\n"
