@@ -1,13 +1,14 @@
 # mcblog
 
 A minimal static blog generator written in C. No dependencies, no build system, no runtime — just a single C file that reads Markdown posts and outputs HTML.
+Preview is here: https://mcbaguetti.xyz/
 
 ---
 
 ## Requirements
 
 - A C compiler (`gcc` or `clang`)
-- A POSIX-compatible system (Linux (or WSL), macOS)
+- A POSIX-compatible system (Linux, macOS, Win)
 
 ---
 
